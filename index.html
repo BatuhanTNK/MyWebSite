@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batuhan Tonk — Full Stack & Mobil Uygulama Geliştirici</title>
+    <meta name="description"
+        content="Batuhan Tonk'un kişisel portfolyo sitesi. Full Stack Yazılım Geliştirici, React Native, JavaScript, TypeScript ve modern web teknolojileri uzmanı.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>BT<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="#about" class="nav-link">Hakkımda</a></li>
+                <li><a href="#skills" class="nav-link">Yetenekler</a></li>
+                <li><a href="#experience" class="nav-link">Deneyimler</a></li>
+                <li><a href="#certificates" class="nav-link">Sertifikalar</a></li>
+                <li><a href="#contact" class="nav-link">İletişim</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Tema Değiştir">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menü">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-effects">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge reveal">
+                    <i class="fas fa-code"></i>
+                    <span>Full Stack & Mobil Geliştirici</span>
+                </div>
+                <h1 class="hero-title reveal">
+                    Merhaba, ben<br>
+                    <span class="gradient-text">Batuhan Tonk</span>
+                </h1>
+                <p class="hero-description reveal">
+                    JavaScript (ES6+), TypeScript ve Java dillerinde güçlü bir altyapıya sahip, yenilikçi projeler
+                    üretmeyi seven bir yazılım mühendisi adayıyım. Şu anda <strong>Dinamik QR Kod Oluşturma</strong>
+                    platformu projesinde Full Stack Developer olarak çalışıyorum.
+                </p>
+                <div class="hero-cta reveal">
+                    <a href="#experience" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Projelerimi İncele
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i>
+                        Benimle İletişime Geç
+                    </a>
+                </div>
+                <div class="hero-stats reveal">
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Proje</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Teknoloji Alanı</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Sertifika</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual reveal">
+                <div class="code-window">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="code-title">portfolio.ts</span>
+                    </div>
+                    <div class="code-body">
+                        <pre><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+  <span class="code-property">name</span>: <span class="code-string">"Batuhan Tonk"</span>,
+  <span class="code-property">role</span>: <span class="code-string">"Full Stack Dev"</span>,
+  <span class="code-property">skills</span>: [
+    <span class="code-string">"React Native"</span>,
+    <span class="code-string">"TypeScript"</span>,
+    <span class="code-string">"Node.js"</span>,
+    <span class="code-string">"PostgreSQL"</span>
+  ],
+  <span class="code-property">passion</span>: <span class="code-string">"AI & Innovation"</span>,
+  <span class="code-method">build</span>: () => <span class="code-string">"🚀"</span>
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <span>Aşağı Kaydır</span>
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-user"></i> Hakkımda</span>
+                <h2 class="section-title">Ben Kimim?</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        <strong>Mehmet Akif Ersoy Üniversitesi</strong>'nde Yazılım Mühendisliği 4. sınıf öğrencisiyim
+                        <span class="highlight">(Ekim 2022 - Devam Ediyor)</span>. Özellikle
+                        <strong>React Native</strong> ile cross-platform mobil uygulamalar geliştirme konusunda
+                        tutkuluyum.
+                    </p>
+                    <p>
+                        Kariyer hedefim; yeni teknolojileri ve trendleri yakından takip ederek,
+                        <strong>yapay zeka</strong> ve modern web/mobil araçlarını birleştiren yenilikçi projelere imza
+                        atmak ve katma değer sağlamaktır.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div>
+                                <h4>Eğitim</h4>
+                                <p>Yazılım Mühendisliği, MAKÜ</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-briefcase"></i></div>
+                            <div>
+                                <h4>Güncel Rol</h4>
+                                <p>Full Stack Developer</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-crosshairs"></i></div>
+                            <div>
+                                <h4>Odak Alanı</h4>
+                                <p>AI & Mobil Geliştirme</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>Konum</h4>
+                                <p>Kocaeli / Darıca</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual reveal">
+                    <div class="tech-orbit">
+                        <div class="orbit-center">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="orbit-ring ring-1">
+                            <div class="orbit-item" style="--i:0"><i class="fab fa-js"></i></div>
+                            <div class="orbit-item" style="--i:1"><i class="fab fa-react"></i></div>
+                            <div class="orbit-item" style="--i:2"><i class="fab fa-java"></i></div>
+                            <div class="orbit-item" style="--i:3"><i class="fab fa-node-js"></i></div>
+                        </div>
+                        <div class="orbit-ring ring-2">
+                            <div class="orbit-item" style="--i:0"><i class="fas fa-database"></i></div>
+                            <div class="orbit-item" style="--i:1"><i class="fab fa-git-alt"></i></div>
+                            <div class="orbit-item" style="--i:2"><i class="fas fa-brain"></i></div>
+                            <div class="orbit-item" style="--i:3"><i class="fab fa-html5"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-cogs"></i> Yetenekler</span>
+                <h2 class="section-title">Teknolojiler & Araçlar</h2>
+            </div>
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon"><i class="fas fa-code"></i></div>
+                        <h3>Programlama Dilleri</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-color="yellow"><i class="fab fa-js"></i> JavaScript (ES6+)</span>
+                        <span class="skill-tag" data-color="blue"><i class="fab fa-js"></i> TypeScript (TSX)</span>
+                        <span class="skill-tag" data-color="red"><i class="fab fa-java"></i> Java</span>
+                        <span class="skill-tag" data-color="orange"><i class="fab fa-html5"></i> HTML</span>
+                        <span class="skill-tag" data-color="purple"><i class="fab fa-css3-alt"></i> CSS</span>
+                    </div>
+                </div>
+
+                <!-- Mobile & Web -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Mobil & Web Geliştirme</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-color="cyan"><i class="fab fa-react"></i> React Native</span>
+                        <span class="skill-tag" data-color="cyan"><i class="fab fa-react"></i> React Hooks</span>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon"><i class="fas fa-database"></i></div>
+                        <h3>Veri Tabanı</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-color="blue"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="skill-tag" data-color="indigo"><i class="fas fa-database"></i> PostgreSQL</span>
+                    </div>
+                </div>
+
+                <!-- API & Integration -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon"><i class="fas fa-plug"></i></div>
+                        <h3>API & Entegrasyon</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-color="green"><i class="fas fa-exchange-alt"></i> REST API</span>
+                        <span class="skill-tag" data-color="purple"><i class="fas fa-brain"></i> fal.ai (AI API)</span>
+                        <span class="skill-tag" data-color="red"><i class="fab fa-google"></i> Google API'ları</span>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon"><i class="fas fa-tools"></i></div>
+                        <h3>Araçlar</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-color="orange"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="skill-tag" data-color="green"><i class="fas fa-tasks"></i> Agile/Scrum</span>
+                        <span class="skill-tag" data-color="pink"><i class="fas fa-project-diagram"></i> n8n
+                            Otomasyon</span>
+                        <span class="skill-tag" data-color="yellow"><i class="fas fa-book"></i> Jupyter Notebook</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Projects Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-briefcase"></i> Deneyimler</span>
+                <h2 class="section-title">Deneyimler & Projeler</h2>
+            </div>
+            <div class="experience-grid">
+                <!-- Current Work -->
+                <div class="experience-card featured reveal">
+                    <div class="card-accent"></div>
+                    <div class="experience-header">
+                        <div class="experience-icon"><i class="fas fa-qrcode"></i></div>
+                        <div class="experience-meta">
+                            <span class="experience-badge current">Güncel Proje</span>
+                            <span class="experience-date"><i class="fas fa-calendar"></i> Devam Ediyor</span>
+                        </div>
+                    </div>
+                    <h3>Dinamik QR Kod Platformu</h3>
+                    <p class="experience-role">Full Stack Developer</p>
+                    <p>PostgreSQL/MySQL veritabanı altyapısıyla dinamik yönlendirmelere olanak tanıyan bir QR kod
+                        oluşturma platformu geliştiriyorum.</p>
+                    <div class="experience-tech">
+                        <span>PostgreSQL</span>
+                        <span>MySQL</span>
+                        <span>JavaScript</span>
+                        <span>REST API</span>
+                    </div>
+                </div>
+
+                <!-- Internship -->
+                <div class="experience-card reveal">
+                    <div class="card-accent"></div>
+                    <div class="experience-header">
+                        <div class="experience-icon"><i class="fas fa-building"></i></div>
+                        <div class="experience-meta">
+                            <span class="experience-badge">Staj</span>
+                            <span class="experience-date"><i class="fas fa-calendar"></i> Temmuz 2025 - Ağustos
+                                2025</span>
+                        </div>
+                    </div>
+                    <h3>Mobil Uygulama Geliştirici</h3>
+                    <p class="experience-role">EDS BİLİŞİM — Stajyer</p>
+                    <p>React Native kullanarak Artırılmış Gerçeklik (AR), react-native-maps ve react-native-sensors ile
+                        konum tabanlı (LBS) mobil uygulama geliştirdim. API entegrasyonları ve modern React Hooks
+                        yapısını etkin bir şekilde kullandım.</p>
+                    <div class="experience-tech">
+                        <span>React Native</span>
+                        <span>AR</span>
+                        <span>Maps API</span>
+                        <span>React Hooks</span>
+                    </div>
+                </div>
+
+                <!-- Open Source Section Header -->
+                <div class="projects-header reveal">
+                    <h3><i class="fab fa-github"></i> Açık Kaynak Projeler</h3>
+                    <p>GitHub profilimden seçkin projeler</p>
+                </div>
+
+                <!-- GitHub Projects -->
+                <div class="github-projects">
+                    <a href="https://github.com/BatuhanTNK/VTO_proje_Viro" target="_blank" class="project-card reveal">
+                        <div class="project-icon"><i class="fas fa-camera"></i></div>
+                        <h4>VTO_proje_Viro</h4>
+                        <p>Virtual Try-On (Sanal Deneme) projesi</p>
+                        <span class="project-lang"><i class="fab fa-js"></i> TypeScript</span>
+                    </a>
+                    <a href="https://github.com/BatuhanTNK" target="_blank" class="project-card reveal">
+                        <div class="project-icon"><i class="fas fa-robot"></i></div>
+                        <h4>AI_Wep_Interface</h4>
+                        <p>Yapay zeka tabanlı web arayüzü projesi</p>
+                        <span class="project-lang"><i class="fab fa-js"></i> TypeScript</span>
+                    </a>
+                    <a href="https://github.com/BatuhanTNK" target="_blank" class="project-card reveal">
+                        <div class="project-icon"><i class="fas fa-map-marked-alt"></i></div>
+                        <h4>ArView_Map</h4>
+                        <p>Artırılmış gerçeklik harita uygulaması</p>
+                        <span class="project-lang"><i class="fab fa-js"></i> JavaScript</span>
+                    </a>
+                    <a href="https://github.com/BatuhanTNK" target="_blank" class="project-card reveal">
+                        <div class="project-icon"><i class="fas fa-brain"></i></div>
+                        <h4>Yas_Tahmini_Py</h4>
+                        <p>Yapay zeka ile yaş tahmini projesi</p>
+                        <span class="project-lang"><i class="fab fa-python"></i> Python</span>
+                    </a>
+                    <a href="https://github.com/BatuhanTNK" target="_blank" class="project-card reveal">
+                        <div class="project-icon"><i class="fas fa-blog"></i></div>
+                        <h4>Ki-sisel-Blog-Web-Site</h4>
+                        <p>Kişisel blog web sitesi</p>
+                        <span class="project-lang"><i class="fab fa-html5"></i> HTML/CSS/JS</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="section cta-section" id="cta">
+        <div class="container">
+            <div class="cta-box reveal">
+                <div class="cta-content">
+                    <h2>Bir Proje mi Planlıyorsunuz?</h2>
+                    <p>Fikirlerinizi gerçeğe dönüştürmek, mobil veya full stack projelerinizde iş birliği yapmak için
+                        hazırım. Modern teknolojilerle yenilikçi çözümler üretelim.</p>
+                </div>
+                <a href="#contact" class="btn btn-primary cta-btn">
+                    Hemen İletişime Geçin <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="section section-alt" id="certificates">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-certificate"></i> Sertifikalar</span>
+                <h2 class="section-title">Sertifikalar & Eğitimler</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">16 Şubat 2026</div>
+                        <h3>Algoritma Programlama ve Veri Yapılarına Giriş</h3>
+                        <p class="timeline-org"><i class="fas fa-university"></i> BTK Akademi</p>
+                        <p>Temel algoritma kavramları, veri yapıları ve problem çözme teknikleri üzerine kapsamlı
+                            eğitim.</p>
+                        <div class="timeline-tags">
+                            <span>Algoritma</span>
+                            <span>Veri Yapıları</span>
+                            <span>Problem Çözme</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">10 Şubat 2026</div>
+                        <h3>Yapay Zekaya Giriş</h3>
+                        <p class="timeline-org"><i class="fas fa-university"></i> BTK Akademi</p>
+                        <p>Yapay zeka temel kavramları, makine öğrenmesi ve modern AI uygulamaları üzerine eğitim.</p>
+                        <div class="timeline-tags">
+                            <span>Yapay Zeka</span>
+                            <span>Makine Öğrenmesi</span>
+                            <span>AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-paper-plane"></i> İletişim</span>
+                <h2 class="section-title">Benimle İletişime Geçin</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <p class="contact-intro">Yeni projeler, iş birlikleri ya da sadece bir merhaba için bana
+                        ulaşabilirsiniz.</p>
+                    <div class="contact-cards">
+                        <a href="mailto:batuhan.tonk.1@gmail.com" class="contact-card">
+                            <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>batuhan.tonk.1@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="tel:+905411466133" class="contact-card">
+                            <div class="contact-card-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <h4>Telefon</h4>
+                                <p>+90 541 146 61 33</p>
+                            </div>
+                        </a>
+                        <div class="contact-card">
+                            <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>Konum</h4>
+                                <p>Kocaeli / Darıca</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/batuhan-tonk-3b520a315" target="_blank"
+                            class="social-link linkedin" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/BatuhanTNK" target="_blank" class="social-link github"
+                            aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:batuhan.tonk.1@gmail.com" class="social-link email" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper reveal">
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xpqjgrvy" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="formName" name="name" placeholder="Adınız" required>
+                            <label for="formName">Adınız</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="formEmail" name="email" placeholder="Email adresiniz" required>
+                            <label for="formEmail">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="formMessage" name="message" rows="5" placeholder="Mesajınız"
+                                required></textarea>
+                            <label for="formMessage">Mesajınız</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Mesaj Gönder
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>BT<span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">Tasarım & Geliştirme — Batuhan Tonk © 2026</p>
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/batuhan-tonk-3b520a315" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/BatuhanTNK" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:batuhan.tonk.1@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
