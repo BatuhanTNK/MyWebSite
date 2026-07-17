@@ -407,16 +407,18 @@ function renderExperience(t) {
     })
     .join("");
 
-  const projectsHTML = e.projects
-    .map(
-      (p) => `
+  const projectCard = (p) => `
       <a href="${p.href}" target="_blank" class="project-card reveal">
         <div class="project-icon"><i class="${p.icon}"></i></div>
         <h4>${p.title}</h4>
         <p>${p.desc}</p>
         <span class="project-lang"><i class="${p.langIcon}"></i> ${p.lang}</span>
-      </a>`
-    )
+      </a>`;
+
+  const projectsHTML = e.projects.map(projectCard).join("");
+
+  const archivedHTML = (e.archivedProjects || [])
+    .map((p) => projectCard(p).replace('class="project-card reveal', 'class="project-card archived reveal'))
     .join("");
 
   return `
@@ -435,6 +437,14 @@ function renderExperience(t) {
           <div class="github-projects">
             ${projectsHTML}
           </div>
+          ${e.archivedProjects && e.archivedProjects.length ? `
+          <div class="projects-header archived-header reveal">
+            <h3><i class="fas fa-box-archive"></i> ${e.archivedHeader}</h3>
+            <p>${e.archivedSub}</p>
+          </div>
+          <div class="github-projects archived-projects">
+            ${archivedHTML}
+          </div>` : ''}
         </div>
       </div>
     </section>

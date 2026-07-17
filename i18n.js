@@ -161,6 +161,14 @@ const translations = {
       projectsHeader: "Açık Kaynak Projeler",
       projectsSub: "GitHub profilimden seçkin projeler",
       projects: [
+        { href: "https://github.com/BatuhanTNK/GameSkinAI", icon: "fas fa-gamepad", title: "GameSkinAI", desc: "Yapay zeka destekli oyun skin/personelleştirme platformu (React + Horizon UI)", lang: "JavaScript", langIcon: "fab fa-js" },
+        { href: "https://github.com/BatuhanTNK/time_thief", icon: "fas fa-stopwatch", title: "time_thief (Chronos)", desc: "Backendless, oyun bazlı görev sistemi: günlük spin, streak ve achievement", lang: "TypeScript", langIcon: "fab fa-js" },
+        { href: "https://github.com/BatuhanTNK/click_count-", icon: "fas fa-mouse-pointer", title: "click_count", desc: "Kategoriler, timer, hatırlatıcı, şablon ve Android widget içeren sayaç app", lang: "TypeScript", langIcon: "fab fa-js" },
+        { href: "https://github.com/BatuhanTNK/chatbot_uygulama-main-server", icon: "fas fa-robot", title: "Chatbot Uygulaması", desc: "Supabase + Mistral AI + Gmail entegrasyonlu chatbot & memnuniyet anket sistemi", lang: "Node.js", langIcon: "fab fa-node-js" }
+      ],
+      archivedHeader: "Diğer Projeler (Arşiv)",
+      archivedSub: "Erken dönem ve eğitim amaçlı çalışmalar",
+      archivedProjects: [
         { href: "https://github.com/BatuhanTNK/VTO_proje_Viro", icon: "fas fa-camera", title: "VTO_proje_Viro", desc: "Virtual Try-On (Sanal Deneme) projesi", lang: "TypeScript", langIcon: "fab fa-js" },
         { href: "https://github.com/BatuhanTNK", icon: "fas fa-robot", title: "AI_Wep_Interface", desc: "Yapay zeka tabanlı web arayüzü projesi", lang: "TypeScript", langIcon: "fab fa-js" },
         { href: "https://github.com/BatuhanTNK", icon: "fas fa-map-marked-alt", title: "ArView_Map", desc: "Artırılmış gerçeklik harita uygulaması", lang: "JavaScript", langIcon: "fab fa-js" },
@@ -386,6 +394,14 @@ const translations = {
       projectsHeader: "Open Source Projects",
       projectsSub: "Featured projects from my GitHub profile",
       projects: [
+        { href: "https://github.com/BatuhanTNK/GameSkinAI", icon: "fas fa-gamepad", title: "GameSkinAI", desc: "AI-powered game skin/personalization platform (React + Horizon UI)", lang: "JavaScript", langIcon: "fab fa-js" },
+        { href: "https://github.com/BatuhanTNK/time_thief", icon: "fas fa-stopwatch", title: "time_thief (Chronos)", desc: "Backendless, game-based task system: daily spin, streak and achievements", lang: "TypeScript", langIcon: "fab fa-js" },
+        { href: "https://github.com/BatuhanTNK/click_count-", icon: "fas fa-mouse-pointer", title: "click_count", desc: "Counter app with categories, timer, reminders, templates and Android widget", lang: "TypeScript", langIcon: "fab fa-js" },
+        { href: "https://github.com/BatuhanTNK/chatbot_uygulama-main-server", icon: "fas fa-robot", title: "Chatbot App", desc: "Chatbot & satisfaction survey with Supabase + Mistral AI + Gmail integration", lang: "Node.js", langIcon: "fab fa-node-js" }
+      ],
+      archivedHeader: "Other Projects (Archive)",
+      archivedSub: "Early-stage and educational work",
+      archivedProjects: [
         { href: "https://github.com/BatuhanTNK/VTO_proje_Viro", icon: "fas fa-camera", title: "VTO_proje_Viro", desc: "Virtual Try-On project", lang: "TypeScript", langIcon: "fab fa-js" },
         { href: "https://github.com/BatuhanTNK", icon: "fas fa-robot", title: "AI_Wep_Interface", desc: "AI-powered web interface project", lang: "TypeScript", langIcon: "fab fa-js" },
         { href: "https://github.com/BatuhanTNK", icon: "fas fa-map-marked-alt", title: "ArView_Map", desc: "Augmented reality map application", lang: "JavaScript", langIcon: "fab fa-js" },

@@ -1263,6 +1263,30 @@ img {
     gap: 6px;
 }
 
+/* Archived projects — daha sönük, arşiv havası */
+.archived-header {
+    opacity: 0.92;
+    margin-top: 36px;
+}
+
+.archived-header h3 {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+}
+
+.project-card.archived {
+    opacity: 0.82;
+    border-style: dashed;
+}
+
+.project-card.archived:hover {
+    opacity: 1;
+}
+
+.project-card.archived .project-icon {
+    transform: scale(0.88);
+}
+
 /* ========================
    CTA SECTION
    ======================== */
