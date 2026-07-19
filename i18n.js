@@ -41,7 +41,7 @@ const translations = {
       badge: "Full Stack & Mobil Geliştirici",
       titleLine1: "Merhaba, ben",
       titleLine2: "Batuhan Tonk",
-      description: `React ile hem modern web uygulamaları hem de React Native ile cross-platform mobil projeler geliştirerek <strong>uçtan uca (end-to-end) çözümler</strong> üreten bir yazılım mühendisi adayıyım. JavaScript (ES6+), TypeScript ve Java dillerinde güçlü bir altyapıya sahibim. Şu anda <strong>Dinamik QR Kod Oluşturma</strong> platformu projesinde Full Stack Developer olarak çalışıyorum.`,
+      description: `React ve React Native kullanarak web ve mobil platformlarda fikirlerinizi hayata geçiren serbest çalışan (freelance) bir <strong>Full Stack ve Mobil Yazılım Geliştiriciyim</strong>. Yapay zeka entegrasyonları, modern arayüzler ve güçlü backend çözümleriyle uçtan uca profesyonel hizmet sunuyorum. Yeni proje ve iş birliklerine açığım!`,
       ctaPrimary: "Projelerimi İncele",
       ctaSecondary: "Benimle İletişime Geç",
       stats: [
@@ -63,8 +63,8 @@ const translations = {
       tag: "Hakkımda",
       title: "Ben Kimim?",
       paragraphs: [
-        `<strong>Mehmet Akif Ersoy Üniversitesi</strong>'nde Yazılım Mühendisliği 4. sınıf öğrencisiyim <span class="highlight">(Ekim 2022 - Devam Ediyor)</span>. <strong>React</strong> ekosistemiyle hem modern, performanslı web uygulamaları hem de <strong>React Native</strong> ile cross-platform mobil uygulamalar geliştiriyorum. Bu sayede tek bir teknoloji yığınıyla uçtan uca çözümler sunabiliyorum.`,
-        `Kariyer hedefim; yeni teknolojileri ve trendleri yakından takip ederek, <strong>fal.ai gibi yapay zeka servislerini projelere entegre edip</strong>, konsept aşamasından çıkararak son kullanıcıya hazır (production-ready) ürünler haline getirmek ve katma değer sağlamaktır.`
+        `<strong>Mehmet Akif Ersoy Üniversitesi</strong> Yazılım Mühendisliği bölümünden mezun oldum <span class="highlight">(2022 - 2026)</span>. <strong>React</strong> ekosistemiyle hem modern, performanslı web uygulamaları hem de <strong>React Native</strong> ile cross-platform mobil uygulamalar geliştiriyorum. Bu sayede tek bir teknoloji yığınıyla uçtan uca çözümler sunabiliyorum.`,
+        `Profesyonel hedefim; modern web ve mobil teknolojilerini <strong>üretken yapay zeka (GenAI)</strong> çözümleriyle harmanlayarak, işletmeler ve girişimler için ölçeklenebilir, yüksek performanslı ve kullanıcı odaklı dijital ürünler geliştirmektir. Fikirleri konseptten alıp, yayınlanmaya hazır (production-ready) ürünler olarak hayata geçirerek iş ortaklarıma en yüksek katma değeri sağlamayı amaçlıyorum.`
       ],
       highlights: [
         { icon: "fas fa-graduation-cap", title: "Eğitim", text: "Yazılım Mühendisliği, MAKÜ" },
@@ -120,6 +120,17 @@ const translations = {
           ]
         },
         {
+          icon: "fas fa-brain",
+          title: "AI & Vibe Coding",
+          description: "Yapay zeka asistanlarını (Antigravity, Claude, Copilot vb.) kullanarak yüksek hız ve verimlilikte yazılım geliştirme.",
+          tags: [
+            { icon: "fas fa-bolt", label: "Vibe Coding", color: "orange" },
+            { icon: "fas fa-atom", label: "Antigravity", color: "purple" },
+            { icon: "fas fa-brain", label: "Claude", color: "red" },
+            { icon: "fas fa-robot", label: "Copilot", color: "blue" }
+          ]
+        },
+        {
           icon: "fas fa-tools",
           title: "Araçlar",
           tags: [
@@ -139,13 +150,13 @@ const translations = {
       items: [
         {
           icon: "fas fa-qrcode",
-          badge: "Güncel Proje",
-          badgeCurrent: true,
-          date: "Devam Ediyor",
+          badge: "Full Stack Proje",
+          badgeCurrent: false,
+          date: "Şubat 2026 - Haziran 2026",
           title: "Dinamik QR Kod Platformu",
           role: "Full Stack Developer",
-          description: "PostgreSQL/MySQL veritabanı altyapısıyla dinamik yönlendirmelere olanak tanıyan bir QR kod oluşturma platformu geliştiriyorum.",
-          tech: ["PostgreSQL", "MySQL", "JavaScript", "REST API"]
+          description: "Gelişmiş QR tasarım aracı, CSV ile toplu kod üretimi, rehbere doğrudan entegre olan dinamik dijital kartvizitler (vCard) ve tam teşekküllü bir admin yönetim/analiz paneli barındıran uçtan uca yönlendirme platformu.",
+          tech: ["React", "Node.js", "MySQL", "Sequelize", "REST API"]
         },
         {
           icon: "fas fa-building",
@@ -274,7 +285,7 @@ const translations = {
       badge: "Full Stack & Mobile Developer",
       titleLine1: "Hi, I'm",
       titleLine2: "Batuhan Tonk",
-      description: `I'm a software engineering student who builds <strong>end-to-end solutions</strong> using React for modern web applications and React Native for cross-platform mobile projects. I have a strong foundation in JavaScript (ES6+), TypeScript, and Java. Currently working as a Full Stack Developer on a <strong>Dynamic QR Code Generation</strong> platform.`,
+      description: `I'm a freelance <strong>Full Stack & Mobile Developer</strong> who brings your ideas to life on web and mobile platforms using React and React Native. I provide end-to-end professional services with AI integrations, modern interfaces, and robust backend solutions. Open to new projects and collaborations!`,
       ctaPrimary: "View My Projects",
       ctaSecondary: "Get In Touch",
       stats: [
@@ -296,8 +307,8 @@ const translations = {
       tag: "About",
       title: "Who Am I?",
       paragraphs: [
-        `I'm a 4th-year Software Engineering student at <strong>Mehmet Akif Ersoy University</strong> <span class="highlight">(Oct 2022 - Present)</span>. I develop both modern, high-performance web applications with <strong>React</strong> and cross-platform mobile apps with <strong>React Native</strong>. This allows me to deliver end-to-end solutions using a single technology stack.`,
-        `My career goal is to follow emerging technologies and trends closely, <strong>integrate AI services like fal.ai into projects</strong>, and transform them from concept stage into production-ready products that deliver real value.`
+        `I graduated with a degree in Software Engineering from <strong>Mehmet Akif Ersoy University</strong> <span class="highlight">(2022 - 2026)</span>. I develop both modern, high-performance web applications with <strong>React</strong> and cross-platform mobile apps with <strong>React Native</strong>, delivering end-to-end solutions using a single technology stack.`,
+        `My professional goal is to blend modern web and mobile technologies with <strong>Generative AI</strong> solutions to build scalable, high-performance, and user-centric digital products for businesses and startups. I aim to deliver maximum value to my partners by taking ideas from concept to launch-ready (production-ready) products.`
       ],
       highlights: [
         { icon: "fas fa-graduation-cap", title: "Education", text: "Software Engineering, MAKU" },
@@ -353,6 +364,17 @@ const translations = {
           ]
         },
         {
+          icon: "fas fa-brain",
+          title: "AI & Vibe Coding",
+          description: "Developing software at high speed and efficiency using AI assistants (Antigravity, Claude, Copilot, etc.).",
+          tags: [
+            { icon: "fas fa-bolt", label: "Vibe Coding", color: "orange" },
+            { icon: "fas fa-atom", label: "Antigravity", color: "purple" },
+            { icon: "fas fa-brain", label: "Claude", color: "red" },
+            { icon: "fas fa-robot", label: "Copilot", color: "blue" }
+          ]
+        },
+        {
           icon: "fas fa-tools",
           title: "Tools",
           tags: [
@@ -372,13 +394,13 @@ const translations = {
       items: [
         {
           icon: "fas fa-qrcode",
-          badge: "Current Project",
-          badgeCurrent: true,
-          date: "Ongoing",
+          badge: "Full Stack Project",
+          badgeCurrent: false,
+          date: "February 2026 - June 2026",
           title: "Dynamic QR Code Platform",
           role: "Full Stack Developer",
-          description: "Developing a QR code generation platform with PostgreSQL/MySQL database infrastructure enabling dynamic redirections.",
-          tech: ["PostgreSQL", "MySQL", "JavaScript", "REST API"]
+          description: "An end-to-end redirection platform featuring an advanced QR designer, bulk code generation via CSV, dynamic digital business cards (vCards) with direct contact downloading, and a comprehensive admin management & analytics dashboard.",
+          tech: ["React", "Node.js", "MySQL", "Sequelize", "REST API"]
         },
         {
           icon: "fas fa-building",
