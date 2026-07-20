@@ -31,3 +31,9 @@ MyWebSite/
 ├── script.js     ← Etkileşimler, animasyonlar ve dinamik menü kontrolleri
 └── style.css     ← Web sitesi tema renkleri, tasarımları ve stil dosyası
 ```
+
+## 🚀 Otomatik Dağıtım (Auto-Deploy)
+
+Bu repoya `main` branch'ine push yaptığınızda site otomatik olarak canlıya alınır:
+GitHub Webhook → `hook.batutnk.com.tr` → sunucuda `git pull` → Caddy `batutnk.com.tr` üzerinden servis.
+
